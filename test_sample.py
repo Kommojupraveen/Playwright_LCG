@@ -26,7 +26,9 @@ def browser_context(playwright_instance):
     browser.close()
 
 def test_place_bet(playwright_instance, browser_context):
-    page = browser_context.new_page()
+    v_filename = "C:/Users/kpraveen/PycharmProjects/Playwright/recording"
+    context = browser_context.new_context(record_video_dir=v_filename)
+    page = context.new_page()
 
     # Open site
     page.goto("https://www.coral.co.uk/en/sports", wait_until="load")
