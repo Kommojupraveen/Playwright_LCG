@@ -27,7 +27,7 @@ def scroll_to_we(target_element):
 
 
 # === Configuration ===
-URL = "https://beta-www.coral.co.uk/en/sports?automationtest=true"  # Replace with your actual login URL
+URL = "url"  # Replace with your actual login URL
 USERNAME = "testgvccl-UTKLVJ"
 PASSWORD = "Qwerty19"
 

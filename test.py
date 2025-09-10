@@ -23,7 +23,7 @@ def test_place_bet(selenium_driver):
     driver = selenium_driver
 
     # Open site
-    driver.get("https://www.coral.co.uk/en/sports")
+    driver.get("url")
     time.sleep(10)  # Wait for 10 seconds
 
     try:

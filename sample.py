@@ -10,7 +10,7 @@ with sync_playwright() as p:
     page = browser.new_page()
 
     # Open site
-    page.goto("https://beta-www.coral.co.uk/en/sports", wait_until="load")
+    page.goto("url", wait_until="load")
     page.wait_for_timeout(10000)
     page.get_by_role("button", name="Allow All").click()
     login_button = page.locator("//span[text()='LOG IN']")

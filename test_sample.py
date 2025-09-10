@@ -31,7 +31,7 @@ def test_place_bet(playwright_instance, browser_context):
     page = context.new_page()
 
     # Open site
-    page.goto("https://www.coral.co.uk/en/sports", wait_until="load")
+    page.goto("url", wait_until="load")
     page.wait_for_timeout(10000)  # Wait for 10 seconds
     page.get_by_role("button", name="Allow All").click()
 
